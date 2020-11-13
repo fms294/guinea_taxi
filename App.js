@@ -3,12 +3,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-import Main from './app/main';
+import Root from './app/main';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      < Main />
+      < Root  {...this.props}/>
     </View>
   );
 }
@@ -16,8 +16,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
