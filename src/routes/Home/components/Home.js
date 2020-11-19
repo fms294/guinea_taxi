@@ -1,5 +1,8 @@
 import React from 'react';
 import { View, Text , StyleSheet } from 'react-native';
+import { Container } from "native-base";
+
+import MapContainer from './MapContainer/index';
 
 class Home extends React.Component{
 
@@ -8,24 +11,21 @@ class Home extends React.Component{
     }
 
     render(){
+        const region ={
+            latitude:3.146642,
+            longitude:101.695845,
+            latitudeDelta:0.0922,
+            longitudeDelta:0.0421
+        }
+       
         return(
-            <View style={styles.container}>
-                <Text>Hello {this.props.name}</Text>
-            </View>
+            <Container>
+                < MapContainer region={region}/>
+            </Container>
         );
     }
 
 }
-
-const styles = StyleSheet.create({
-    container :{
-        flex:1,
-        justifyContent:"center", 
-        alignContent:"center",
-        margin: 150,
-
-    }
-})
 
 
 export default Home;
