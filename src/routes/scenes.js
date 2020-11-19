@@ -12,3 +12,5 @@ const scenes = Actions.create(
         />
     </Scene>
 )
+
+export default scenes;

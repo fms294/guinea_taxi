@@ -3,12 +3,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-import Root from './app/main';
+import Root from './src/main';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      < Root  {...this.props}/>
+      <Root  {...this.props} />
     </View>
   );
 }
